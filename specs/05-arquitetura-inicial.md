@@ -74,7 +74,7 @@ Características desejadas:
 - fácil de testar isoladamente;
 - separado dos detalhes do FastAPI e do React.
 
-As fórmulas, categorias de tarefa, tamanhos e regras de arredondamento serão detalhados antes da implementação da calculadora.
+As fórmulas, categorias de tarefa, tamanhos e regras de arredondamento estão definidos em [`06-regras-de-estimativa.md`](./06-regras-de-estimativa.md).
 
 ## Fluxo de dados da simulação
 

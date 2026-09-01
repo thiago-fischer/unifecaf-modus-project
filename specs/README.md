@@ -14,6 +14,7 @@ O projeto está na fase de preparação. Ainda não há implementação de produ
 - [Escopo do MVP](./03-escopo-do-mvp.md): fluxo principal, funcionalidades obrigatórias e limites da primeira versão.
 - [Stack tecnológica](./04-stack-tecnologica.md): tecnologias escolhidas e responsabilidades iniciais de cada camada.
 - [Arquitetura inicial](./05-arquitetura-inicial.md): componentes, fluxo de dados e contrato conceitual do MVP.
+- [Regras de estimativa](./06-regras-de-estimativa.md): categorias, tokens, preços didáticos e fórmula do cálculo.
 - [Modelo de issue](./templates/issue.md): roteiro para registrar uma demanda executável.
 - [Modelo de pull request](./templates/pull-request.md): roteiro para propor uma alteração.
 

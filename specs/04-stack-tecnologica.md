@@ -66,7 +66,6 @@ Esta especificação define as tecnologias principais, mas não define ainda:
 - endpoints e contratos detalhados da API;
 - estrutura final de diretórios;
 - biblioteca de componentes ou estratégia visual;
-- regras matemáticas completas da estimativa;
 - processo de deploy.
 
 Esses pontos serão definidos nas especificações de arquitetura e implementação. As verificações necessárias serão registradas nas próprias issues de implementação.
