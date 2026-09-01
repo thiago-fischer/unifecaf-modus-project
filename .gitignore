@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.pytest_cache/
+.mypy_cache/
+
+# Node.js
+node_modules/
+dist/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Local tooling
+.vscode/
+.idea/
