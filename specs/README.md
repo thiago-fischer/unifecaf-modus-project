@@ -11,6 +11,7 @@ O projeto está na fase de preparação. Ainda não há implementação de produ
 - [Visão geral do projeto](./00-visao-geral.md): contexto inicial, objetivos e limites desta fase.
 - [Fluxo de colaboração](./01-fluxo-de-colaboracao.md): branches, commits, issues, revisão e merges.
 - [Critérios de aceite e Definition of Done](./02-criterios-de-aceite-e-conclusao.md): como avaliar e concluir um trabalho.
+- [Escopo do MVP](./03-escopo-do-mvp.md): fluxo principal, funcionalidades obrigatórias e limites da primeira versão.
 - [Modelo de issue](./templates/issue.md): roteiro para registrar uma demanda executável.
 - [Modelo de pull request](./templates/pull-request.md): roteiro para propor uma alteração.
 

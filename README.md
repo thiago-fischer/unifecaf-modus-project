@@ -18,7 +18,7 @@ A proposta do primeiro incremento é permitir que a pessoa usuária simule uma g
 - o tipo de tarefa;
 - o tamanho esperado da resposta.
 
-Com base nisso, a aplicação deverá apresentar estimativas de tokens de entrada e saída, custo aproximado, comparação entre modelos e orientações sobre uso consciente. O detalhamento e a priorização do MVP ainda serão definidos na [issue #4](https://github.com/thiago-fischer/unifecaf-modus-project/issues/4).
+Com base nisso, a aplicação deverá apresentar estimativas de tokens de entrada e saída, custo aproximado, comparação entre modelos e orientações sobre uso consciente. O escopo detalhado da primeira versão está registrado em [`specs/03-escopo-do-mvp.md`](specs/03-escopo-do-mvp.md).
 
 ## Limites conhecidos
 
@@ -39,11 +39,11 @@ O projeto está em fase de planejamento colaborativo e ainda não possui código
 
 ## Próximos passos
 
-1. [Definir funcionalidades e escopo do MVP](https://github.com/thiago-fischer/unifecaf-modus-project/issues/4)
-2. [Escolher stack tecnológica](https://github.com/thiago-fischer/unifecaf-modus-project/issues/5)
-3. [Definir arquitetura inicial](https://github.com/thiago-fischer/unifecaf-modus-project/issues/6)
-4. [Definir estratégia de testes](https://github.com/thiago-fischer/unifecaf-modus-project/issues/7)
-5. [Configurar integração contínua básica](https://github.com/thiago-fischer/unifecaf-modus-project/issues/8)
+1. [Escolher stack tecnológica](https://github.com/thiago-fischer/unifecaf-modus-project/issues/5)
+2. [Definir arquitetura inicial](https://github.com/thiago-fischer/unifecaf-modus-project/issues/6)
+3. [Definir estratégia de testes](https://github.com/thiago-fischer/unifecaf-modus-project/issues/7)
+4. [Configurar integração contínua básica](https://github.com/thiago-fischer/unifecaf-modus-project/issues/8)
+5. Transformar as funcionalidades do MVP em issues de implementação.
 
 ## Como contribuir
 
