@@ -45,13 +45,13 @@ O projeto está em fase de planejamento colaborativo e ainda não possui código
 - [Fluxo de colaboração](specs/01-fluxo-de-colaboracao.md)
 - [Critérios de aceite e conclusão](specs/02-criterios-de-aceite-e-conclusao.md)
 - [Índice das especificações](specs/README.md)
+- [Arquitetura inicial](specs/05-arquitetura-inicial.md)
 
 ## Próximos passos
 
-1. [Definir arquitetura inicial](https://github.com/thiago-fischer/unifecaf-modus-project/issues/6)
-2. [Definir estratégia de testes](https://github.com/thiago-fischer/unifecaf-modus-project/issues/7)
-3. [Configurar integração contínua básica](https://github.com/thiago-fischer/unifecaf-modus-project/issues/8)
-4. Transformar as funcionalidades do MVP em issues de implementação.
+1. [Definir estratégia de testes](https://github.com/thiago-fischer/unifecaf-modus-project/issues/7)
+2. [Configurar integração contínua básica](https://github.com/thiago-fischer/unifecaf-modus-project/issues/8)
+3. Transformar as funcionalidades do MVP em issues de implementação.
 
 ## Como contribuir
 
