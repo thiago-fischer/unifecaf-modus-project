@@ -26,6 +26,15 @@ O projeto não pretende calcular a pegada ambiental real de uma geração. Esse 
 
 Também não fazem parte desta etapa a integração com APIs reais de LLM, banco de dados, autenticação ou definição da stack tecnológica.
 
+## Stack prevista
+
+- Backend: Python + FastAPI.
+- Frontend: React + TypeScript + Vite.
+- Comunicação: API REST utilizando JSON.
+- Dados iniciais: catálogo estático, sem banco de dados.
+
+Consulte [`specs/04-stack-tecnologica.md`](specs/04-stack-tecnologica.md) para conhecer as responsabilidades e os limites dessa decisão.
+
 ## Estado do projeto
 
 O projeto está em fase de planejamento colaborativo e ainda não possui código de aplicação. As decisões são acompanhadas pelas [issues do repositório](https://github.com/thiago-fischer/unifecaf-modus-project/issues).
@@ -39,11 +48,10 @@ O projeto está em fase de planejamento colaborativo e ainda não possui código
 
 ## Próximos passos
 
-1. [Escolher stack tecnológica](https://github.com/thiago-fischer/unifecaf-modus-project/issues/5)
-2. [Definir arquitetura inicial](https://github.com/thiago-fischer/unifecaf-modus-project/issues/6)
-3. [Definir estratégia de testes](https://github.com/thiago-fischer/unifecaf-modus-project/issues/7)
-4. [Configurar integração contínua básica](https://github.com/thiago-fischer/unifecaf-modus-project/issues/8)
-5. Transformar as funcionalidades do MVP em issues de implementação.
+1. [Definir arquitetura inicial](https://github.com/thiago-fischer/unifecaf-modus-project/issues/6)
+2. [Definir estratégia de testes](https://github.com/thiago-fischer/unifecaf-modus-project/issues/7)
+3. [Configurar integração contínua básica](https://github.com/thiago-fischer/unifecaf-modus-project/issues/8)
+4. Transformar as funcionalidades do MVP em issues de implementação.
 
 ## Como contribuir
 
