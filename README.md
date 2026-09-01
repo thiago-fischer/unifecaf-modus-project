@@ -46,6 +46,7 @@ O projeto está em fase de planejamento colaborativo e ainda não possui código
 - [Critérios de aceite e conclusão](specs/02-criterios-de-aceite-e-conclusao.md)
 - [Índice das especificações](specs/README.md)
 - [Arquitetura inicial](specs/05-arquitetura-inicial.md)
+- [Regras de estimativa](specs/06-regras-de-estimativa.md)
 
 ## Próximos passos
 
