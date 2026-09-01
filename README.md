@@ -4,15 +4,50 @@
 
 O Modus será uma aplicação web educativa para tornar mais compreensível o custo estimado por trás de uma interação com uma ferramenta de Inteligência Artificial generativa.
 
-O projeto pretende apresentar estimativas de tokens e custo, comparar modelos e incentivar o uso consciente de IA. O foco inicial é educativo: o Modus não calcula a pegada ambiental real de uma geração nem promete representar com exatidão os custos internos de cada provedor.
+## Sobre o projeto
+
+Cada prompt envolve processamento, infraestrutura e uso de tokens, mas esse custo normalmente não é visível para quem utiliza uma LLM. O Modus pretende tornar essa relação mais clara para incentivar um uso consciente de IA.
+
+O foco inicial é educativo: o Modus será uma ferramenta de estimativa e não uma calculadora exata de impacto ambiental ou dos custos internos de cada provedor.
+
+## Escopo inicial
+
+A proposta do primeiro incremento é permitir que a pessoa usuária simule uma geração escolhendo:
+
+- a LLM desejada;
+- o tipo de tarefa;
+- o tamanho esperado da resposta.
+
+Com base nisso, a aplicação deverá apresentar estimativas de tokens de entrada e saída, custo aproximado, comparação entre modelos e orientações sobre uso consciente. O detalhamento e a priorização do MVP ainda serão definidos na [issue #4](https://github.com/thiago-fischer/unifecaf-modus-project/issues/4).
+
+## Limites conhecidos
+
+O projeto não pretende calcular a pegada ambiental real de uma geração. Esse cálculo exigiria dados específicos sobre datacenters, matriz energética, hardware e infraestrutura de cada provedor.
+
+Também não fazem parte desta etapa a integração com APIs reais de LLM, banco de dados, autenticação ou definição da stack tecnológica.
 
 ## Estado do projeto
 
-O projeto está em fase de planejamento colaborativo. A visão inicial está registrada em [`specs/00-visao-geral.md`](specs/00-visao-geral.md), e as próximas decisões são acompanhadas pelas [issues do repositório](https://github.com/thiago-fischer/unifecaf-modus-project/issues).
+O projeto está em fase de planejamento colaborativo e ainda não possui código de aplicação. As decisões são acompanhadas pelas [issues do repositório](https://github.com/thiago-fischer/unifecaf-modus-project/issues).
+
+## Documentação
+
+- [Visão geral do projeto](specs/00-visao-geral.md)
+- [Fluxo de colaboração](specs/01-fluxo-de-colaboracao.md)
+- [Critérios de aceite e conclusão](specs/02-criterios-de-aceite-e-conclusao.md)
+- [Índice das especificações](specs/README.md)
+
+## Próximos passos
+
+1. [Definir funcionalidades e escopo do MVP](https://github.com/thiago-fischer/unifecaf-modus-project/issues/4)
+2. [Escolher stack tecnológica](https://github.com/thiago-fischer/unifecaf-modus-project/issues/5)
+3. [Definir arquitetura inicial](https://github.com/thiago-fischer/unifecaf-modus-project/issues/6)
+4. [Definir estratégia de testes](https://github.com/thiago-fischer/unifecaf-modus-project/issues/7)
+5. [Configurar integração contínua básica](https://github.com/thiago-fischer/unifecaf-modus-project/issues/8)
 
 ## Como contribuir
 
-Consulte [`CONTRIBUTING.md`](CONTRIBUTING.md) para conhecer o fluxo de issues, branches, pull requests, revisões e merges. As especificações do projeto estão em [`specs/`](specs/).
+Consulte [`CONTRIBUTING.md`](CONTRIBUTING.md) para conhecer o fluxo de issues, branches, pull requests, revisões e merges. Toda alteração deve estar relacionada a uma issue e passar por pull request antes de chegar à `main`.
 
 ## Licença
 
