@@ -49,9 +49,9 @@ O projeto está em fase de planejamento colaborativo e ainda não possui código
 
 ## Próximos passos
 
-1. [Definir estratégia de testes](https://github.com/thiago-fischer/unifecaf-modus-project/issues/7)
-2. [Configurar integração contínua básica](https://github.com/thiago-fischer/unifecaf-modus-project/issues/8)
-3. Transformar as funcionalidades do MVP em issues de implementação.
+1. [Configurar regras de proteção da branch `main`](https://github.com/thiago-fischer/unifecaf-modus-project/issues/9)
+2. Transformar as funcionalidades do MVP em issues de implementação.
+3. Fazer verificações manuais ou testes pontuais dentro de cada issue, conforme a necessidade.
 
 ## Como contribuir
 

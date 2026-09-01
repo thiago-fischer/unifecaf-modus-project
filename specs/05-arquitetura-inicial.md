@@ -169,7 +169,6 @@ Essa é uma organização inicial para orientar o primeiro código. Ela pode ser
 - [ ] A estrutura proposta permite dividir o primeiro código entre colaboradores.
 - [ ] As fórmulas detalhadas continuam separadas da decisão arquitetural.
 
-## Próximas dependências
+## Próxima etapa
 
-- [Issue #7: definir estratégia de testes](https://github.com/thiago-fischer/unifecaf-modus-project/issues/7)
-- [Issue #8: configurar integração contínua básica](https://github.com/thiago-fischer/unifecaf-modus-project/issues/8)
+As funcionalidades obrigatórias do MVP devem ser divididas em issues de implementação. Cada issue deverá indicar como a alteração será verificada, sem exigir uma estratégia de testes ou uma pipeline de CI separada para este mini projeto.

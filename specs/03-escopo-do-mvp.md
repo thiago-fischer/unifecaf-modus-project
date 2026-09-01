@@ -92,10 +92,11 @@ O resultado deve apresentar uma explicação curta sobre como prompts mais claro
 - [ ] O MVP não depende de API externa, login ou banco de dados.
 - [ ] A proposta de estimativa educativa está claramente diferenciada de um cálculo exato.
 - [ ] Cada funcionalidade obrigatória pode ser transformada em uma issue de implementação.
-- [ ] As decisões de stack, arquitetura, testes e regras matemáticas permanecem nas issues correspondentes.
+- [ ] As decisões de stack e arquitetura estão documentadas; as regras matemáticas detalhadas permanecem nas issues de implementação.
 
-## Próximas dependências
+## Decisões relacionadas
 
 - [Issue #5: escolher stack tecnológica](https://github.com/thiago-fischer/unifecaf-modus-project/issues/5)
 - [Issue #6: definir arquitetura inicial](https://github.com/thiago-fischer/unifecaf-modus-project/issues/6)
-- [Issue #7: definir estratégia de testes](https://github.com/thiago-fischer/unifecaf-modus-project/issues/7)
+
+Não haverá uma issue separada para estratégia de testes neste mini projeto. Cada issue de implementação deverá registrar as verificações aplicáveis ao seu escopo.

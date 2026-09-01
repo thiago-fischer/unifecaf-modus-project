@@ -67,10 +67,9 @@ Esta especificação define as tecnologias principais, mas não define ainda:
 - estrutura final de diretórios;
 - biblioteca de componentes ou estratégia visual;
 - regras matemáticas completas da estimativa;
-- ferramenta definitiva de testes;
 - processo de deploy.
 
-Esses pontos serão definidos nas especificações de arquitetura, testes e implementação.
+Esses pontos serão definidos nas especificações de arquitetura e implementação. As verificações necessárias serão registradas nas próprias issues de implementação.
 
 ## Critérios de aceite
 
