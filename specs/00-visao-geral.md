@@ -103,3 +103,7 @@ Esses pontos serão tratados em etapas futuras do projeto.
 O principal risco desta etapa é manter a proposta vaga demais, gerando retrabalho durante a construção do MVP.
 
 Para reduzir esse risco, o projeto assume desde o início que o Modus será uma ferramenta educativa de estimativa, e não uma calculadora exata de impacto ambiental.
+
+## Licença
+
+O projeto será distribuído sob a licença MIT. Consulte o arquivo [`LICENSE`](../LICENSE) para ver os termos completos.
