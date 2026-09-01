@@ -58,6 +58,10 @@ O projeto está em fase de planejamento colaborativo e ainda não possui código
 
 Consulte [`CONTRIBUTING.md`](CONTRIBUTING.md) para conhecer o fluxo de issues, branches, pull requests, revisões e merges. Toda alteração deve estar relacionada a uma issue e passar por pull request antes de chegar à `main`.
 
+## Desenvolvimento local
+
+O backend inicial está documentado em [`backend/README.md`](backend/README.md). O frontend será configurado em uma etapa posterior.
+
 ## Licença
 
 Este projeto está licenciado sob a [licença MIT](LICENSE).
