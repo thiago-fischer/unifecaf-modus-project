@@ -1,0 +1,22 @@
+[
+  {
+    "id": "modelo-basico",
+    "nome_exibicao": "Modelo Básico de Referência",
+    "valores_referencia": {
+      "moeda": "BRL",
+      "valor": 150.00
+    },
+    "origem": "Tabela de Preços X",
+    "data_referencia": "2026-09-14"
+  },
+  {
+    "id": "modelo-avancado",
+    "nome_exibicao": "Modelo Avançado",
+    "valores_referencia": {
+      "moeda": "BRL",
+      "valor": 300.00
+    },
+    "origem": "Tabela de Preços X",
+    "data_referencia": "2026-09-14"
+  }
+]
