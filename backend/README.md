@@ -56,3 +56,5 @@ A documentação interativa gerada pelo FastAPI está disponível em `http://127
 ## Escopo atual
 
 Esta etapa cria somente a aplicação base e o endpoint de saúde. O catálogo, as regras de estimativa e o endpoint de simulação serão adicionados nas issues seguintes.
+
+Aviso sobre Estimativas (MVP): Os valores de referência presentes no catálogo estático (catalogo.json) são aproximações e podem estar desatualizados. Esta é uma limitação explícita do MVP; os valores devem ser tratados apenas como base para as regras de estimativa.
