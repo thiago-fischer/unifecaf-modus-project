@@ -1,0 +1,58 @@
+:root {
+  font-family: Inter, "Segoe UI", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #e2e8f0;
+  background:
+    radial-gradient(circle at top, rgba(139, 92, 246, 0.24), transparent 35%),
+    linear-gradient(180deg, #020817 0%, #0f172a 100%);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: clamp(2.1rem, 4vw, 3.3rem);
+  line-height: 1.05;
+  color: #f8fafc;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: clamp(1.6rem, 2.5vw, 2.6rem);
+  line-height: 1.1;
+  color: #f8fafc;
+  margin-bottom: 14px;
+}
+
+p {
+  color: #cbd5e1;
+  font-size: 1.03rem;
+}
