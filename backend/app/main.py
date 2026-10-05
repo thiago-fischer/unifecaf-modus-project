@@ -1,6 +1,8 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 
+from app.api.routes import router
+
 
 class HealthResponse(BaseModel):
     status: str
@@ -18,3 +20,6 @@ app = FastAPI(
 def health() -> HealthResponse:
     """Indica se a API está disponível para receber requisições."""
     return HealthResponse(status="ok", service="modus-api")
+
+
+app.include_router(router)
