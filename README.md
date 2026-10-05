@@ -20,6 +20,20 @@ A proposta do primeiro incremento é permitir que a pessoa usuária simule uma g
 
 Com base nisso, a aplicação deverá apresentar estimativas de tokens de entrada e saída, custo aproximado, comparação entre modelos e orientações sobre uso consciente. O escopo detalhado da primeira versão está registrado em [`specs/03-escopo-do-mvp.md`](specs/03-escopo-do-mvp.md).
 
+
+## Boas práticas para uso consciente de IA
+
+Algumas práticas simples podem contribuir para uma utilização mais eficiente e consciente de ferramentas de Inteligência Artificial:
+
+- Escrever prompts claros e objetivos, evitando solicitações desnecessariamente longas.
+- Fornecer o contexto necessário já na primeira interação para reduzir repetições.
+- Evitar gerar novamente uma resposta quando apenas uma pequena correção é necessária.
+- Solicitar respostas no tamanho adequado para a necessidade da tarefa.
+- Revisar e reaproveitar informações já geradas antes de realizar uma nova solicitação.
+- Utilizar a IA como ferramenta de apoio, mantendo a análise crítica sobre as respostas recebidas.
+
+Essas práticas ajudam a tornar a interação mais objetiva e estão alinhadas à proposta educativa do Modus de incentivar um uso mais consciente da Inteligência Artificial.
+
 ## Limites conhecidos
 
 O projeto não pretende calcular a pegada ambiental real de uma geração. Esse cálculo exigiria dados específicos sobre datacenters, matriz energética, hardware e infraestrutura de cada provedor.
