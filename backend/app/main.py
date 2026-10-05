@@ -1,20 +1,17 @@
 from fastapi import FastAPI
-from pydantic import BaseModel
+
+from app.api.router import api_router
+from app.core.config import APP_DESCRIPTION, APP_NAME, APP_VERSION
 
 
-class HealthResponse(BaseModel):
-    status: str
-    service: str
+def create_app() -> FastAPI:
+    application = FastAPI(
+        title=APP_NAME,
+        description=APP_DESCRIPTION,
+        version=APP_VERSION,
+    )
+    application.include_router(api_router)
+    return application
 
 
-app = FastAPI(
-    title="Modus API",
-    description="API do simulador educativo de custo de interações com LLMs.",
-    version="0.1.0",
-)
-
-
-@app.get("/health", response_model=HealthResponse, tags=["system"])
-def health() -> HealthResponse:
-    """Indica se a API está disponível para receber requisições."""
-    return HealthResponse(status="ok", service="modus-api")
+app = create_app()
