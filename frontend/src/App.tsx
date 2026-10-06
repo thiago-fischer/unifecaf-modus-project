@@ -10,6 +10,7 @@ function App() {
   const [selectedModel, setSelectedModel] = useState(modelOptions[0].name);
   const [task, setTask] = useState(tasks[0]);
   const [outputSize, setOutputSize] = useState(outputSizes[1]);
+  const [showComparison, setShowComparison] = useState(false);
 
   const selected = useMemo(
     () =>
@@ -32,6 +33,19 @@ function App() {
     (selected.estimatedCost * multiplier).toFixed(2),
   );
 
+  const comparisonRows = modelOptions.map((model) => {
+    const modelInput = Math.round(model.inputTokens * multiplier);
+    const modelOutput = Math.round(model.outputTokens * multiplier);
+    const modelCost = Number((model.estimatedCost * multiplier).toFixed(2));
+
+    return {
+      ...model,
+      modelInput,
+      modelOutput,
+      modelCost,
+    };
+  });
+
   return (
     <main className="app-shell">
       <header className="topbar">
@@ -39,8 +53,12 @@ function App() {
           <p className="eyebrow">Modus</p>
           <h1>Estimador de custo de IA</h1>
         </div>
-        <button type="button" className="ghost-button">
-          Comparar modelos
+        <button
+          type="button"
+          className="ghost-button"
+          onClick={() => setShowComparison((current) => !current)}
+        >
+          {showComparison ? "Ocultar comparação" : "Comparar modelos"}
         </button>
       </header>
 
@@ -126,12 +144,12 @@ function App() {
 
           <ul className="model-info">
             <li>
-              <strong>Tarefa</strong>
+              <strong>Tarefa ideal</strong>
               <span>{selected.task}</span>
             </li>
             <li>
               <strong>Uso recomendado</strong>
-              <span>{selected.context}</span>
+              <span>{task}</span>
             </li>
             <li>
               <strong>Contexto</strong>
@@ -154,6 +172,41 @@ function App() {
           </ul>
         </article>
       </section>
+
+      {showComparison && (
+        <section className="panel comparison-panel">
+          <div className="panel-header">
+            <h3>Comparação de modelos</h3>
+            <span>{outputSize}</span>
+          </div>
+
+          <div className="comparison-table-wrap">
+            <table className="comparison-table">
+              <thead>
+                <tr>
+                  <th>Modelo</th>
+                  <th>Entrada</th>
+                  <th>Saída</th>
+                  <th>Custo</th>
+                </tr>
+              </thead>
+              <tbody>
+                {comparisonRows.map((model) => (
+                  <tr
+                    key={model.name}
+                    className={selectedModel === model.name ? "is-selected" : ""}
+                  >
+                    <td>{model.name}</td>
+                    <td>{model.modelInput.toLocaleString()} tk</td>
+                    <td>{model.modelOutput.toLocaleString()} tk</td>
+                    <td>US$ {model.modelCost.toFixed(2)}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
+      )}
     </main>
   );
 }
