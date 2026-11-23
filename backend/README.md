@@ -112,7 +112,8 @@ python -m pytest
 Os testes reproduzem os exemplos calculados manualmente em
 [`specs/06-regras-de-estimativa.md`](../specs/06-regras-de-estimativa.md).
 
-## Escopo atual
+## Integração com o frontend
 
-Catálogo estático, motor de estimativa e endpoints de catálogo e simulação.
-O frontend ainda não consome a API; essa integração fica para uma issue seguinte.
+O frontend consulta `/catalog` e envia as escolhas para `/simulations`. No desenvolvimento, o Vite encaminha as chamadas `/api` para esta API. Para acesso direto entre origens diferentes, defina `MODUS_ALLOWED_ORIGINS` com as origens permitidas, separadas por vírgula. O padrão permite `http://localhost:5173` e `http://127.0.0.1:5173`.
+
+O catálogo é estático e usa preços fictícios; a aplicação não chama provedores de LLM.
