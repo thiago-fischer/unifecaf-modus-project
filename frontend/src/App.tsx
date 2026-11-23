@@ -28,6 +28,8 @@ function App() {
 
   const estimatedInput = Math.round(selected.inputTokens * multiplier);
   const estimatedOutput = Math.round(selected.outputTokens * multiplier);
+  const estimatedTotal = estimatedInput + estimatedOutput;
+
   const estimatedCost = Number(
     (selected.estimatedCost * multiplier).toFixed(2),
   );
@@ -39,6 +41,7 @@ function App() {
           <p className="eyebrow">Modus</p>
           <h1>Estimador de custo de IA</h1>
         </div>
+
         <button type="button" className="ghost-button">
           Comparar modelos
         </button>
@@ -47,7 +50,9 @@ function App() {
       <section className="panel hero-panel">
         <div className="hero-copy">
           <span className="status-pill">Versão MVP</span>
+
           <h2>Entenda o custo por trás de uma interação com LLM.</h2>
+
           <p>
             Simule uma tarefa, escolha um modelo e veja o impacto estimado em
             tokens, custo e uso consciente de IA.
@@ -105,11 +110,19 @@ function App() {
           value={`${estimatedInput.toLocaleString()} tk`}
           detail="Contexto do prompt"
         />
+
         <MetricCard
           label="Tokens de saída"
           value={`${estimatedOutput.toLocaleString()} tk`}
           detail="Resposta gerada"
         />
+
+        <MetricCard
+          label="Total de tokens"
+          value={`${estimatedTotal.toLocaleString()} tk`}
+          detail="Entrada + saída"
+        />
+
         <MetricCard
           label="Custo estimado"
           value={`US$ ${estimatedCost.toFixed(2)}`}
@@ -129,10 +142,12 @@ function App() {
               <strong>Tarefa</strong>
               <span>{selected.task}</span>
             </li>
+
             <li>
               <strong>Uso recomendado</strong>
               <span>{selected.context}</span>
             </li>
+
             <li>
               <strong>Contexto</strong>
               <span>{selected.context}</span>
@@ -147,9 +162,11 @@ function App() {
 
           <ul className="tips-list">
             <li>Reduza prompts redundantes para diminuir tokens de entrada.</li>
+
             <li>
               Defina uma resposta mais curta quando a qualidade for suficiente.
             </li>
+
             <li>Compare modelos antes de escalar automações internas.</li>
           </ul>
         </article>
