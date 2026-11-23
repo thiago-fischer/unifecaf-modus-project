@@ -6,7 +6,8 @@ Para adicionar um novo domínio (ex.: simulação), crie o módulo em
 
 from fastapi import APIRouter
 
-from app.api.routes import health
+from app.api.routes import health, simulation
 
 api_router = APIRouter()
 api_router.include_router(health.router)
+api_router.include_router(simulation.router)
